@@ -1,12 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sportify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
+
 <body>
-    
+    <!-- Navbar here -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="35" width="40"> Sportify</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><span class="fa fa-home"></span> Home<span
+                                class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="fa fa-info"></span> About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="fa fa-bars"></span>
+                            Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Football</a>
+                            <a class="dropdown-item" href="#">Cricket</a>
+                            <a class="dropdown-item" href="#">Basketball</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="fa fa-address-book"></span> Contact Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text ml-0">
+                    <a href="#" data-toggle="modal" data-target="#registerModal">
+                        <span class="fa fa-user-plus"></span> Register</a>
+                </span>
+                <span class="navbar-text ml-3">
+                    <a href="#" data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- LoginModal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="col form-row">
+
+                            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                placeholder="Enter email">
+                        </div><br>
+                        <div class="col form-row">
+                            <label class="sr-only" for="exampleInputPassword3">Password</label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                                placeholder="Password">
+                        </div><br>
+                        <div class="col-sm-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label"> Remember me
+                                </label>
+                            </div>
+                        </div><br>
+                        <div class="col form-row">
+                            <button type="submit" class="btn btn-dark btn-sm ">Sign in</button>
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-dismiss="modal">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="registerModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- RegisterModal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="col form-row">
+
+                            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                placeholder="Enter email">
+                        </div><br>
+                        <div class="col form-row">
+                            <label class="sr-only" for="exampleInputPassword3">Password</label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                                placeholder="Password">
+                        </div><br>
+                        <div class="col-sm-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label"> Remember me
+                                </label>
+                            </div>
+                        </div><br>
+                        <div class="col form-row">
+                            <button type="submit" class="btn btn-dark btn-sm ">Sign in</button>
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-dismiss="modal">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 align="center">Hello World!</h1>
+    <br>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus voluptatibus sint, facere dignissimos est
+        architecto unde. Excepturi cupiditate laudantium fugiat quo impedit accusamus repellendus eius, sapiente sit
+        nam,
+        libero error nobis nisi ipsam minima necessitatibus consectetur tenetur alias, perspiciatis a ad quam
+        dignissimos!
+        Ipsum dolorem itaque excepturi porro soluta. Asperiores adipisci laborum consectetur nesciunt magnam, odit earum
+        quo
+        doloremque reiciendis quae voluptate modi, eius accusamus voluptatem culpa deleniti atque? Nesciunt quas, ab in
+        repellendus eos dolore autem assumenda consequuntur natus corporis illum iure illo optio ullam at, commodi non,
+        libero quia? Rem consequatur recusandae natus, soluta vitae inventore, quasi porro earum maxime id accusamus
+        eligendi adipisci aspernatur sunt voluptas alias, ullam animi dolore quibusdam modi quod ratione iste. Iusto
+        nulla
+        vel necessitatibus modi reprehenderit voluptatem porro eaque architecto, dolorum ratione perferendis. Quaerat
+        amet
+        aut cumque neque! Odio doloremque sit quis obcaecati laboriosam cumque velit iusto, eligendi nobis a corporis ea
+        aliquid rem veritatis minima aliquam aperiam delectus consectetur, provident repellendus. Reprehenderit fuga
+        delectus iste dolor odit et consequuntur praesentium nostrum exercitationem? Repudiandae debitis, pariatur ipsum
+        nam
+        sapiente odit ipsa sed hic fugiat dicta rerum nisi blanditiis cumque officia nobis inventore consequuntur
+        asperiores
+        iste aspernatur fuga! Temporibus quasi placeat eaque ipsum aperiam possimus ad consectetur soluta veritatis
+        accusamus inventore repellat obcaecati reprehenderit libero minus qui accusantium ratione, tempora quos! Libero
+        omnis vitae provident earum sunt, soluta ipsum possimus ipsa minima ab veritatis id velit, quos unde dolorum
+        sequi
+        corrupti molestiae consectetur hic fugiat accusamus quaerat. Alias iusto adipisci molestias dicta aspernatur
+        nisi
+        modi repudiandae aliquid hic harum ad amet earum ipsum, atque similique, in magni consequuntur rem. Esse velit
+        eaque
+        deserunt dicta exercitationem nisi corporis laboriosam pariatur quos neque, minus magni ratione, in sunt?
+        Ratione
+        culpa illum corporis nisi totam. Temporibus molestiae sint maiores nulla tenetur. Unde modi, nemo, dolore
+        voluptas
+        voluptatibus ex mollitia magnam iste labore, distinctio reprehenderit. Nobis natus, quisquam eligendi fuga
+        impedit,
+        necessitatibus reprehenderit atque quos, saepe suscipit accusantium rem. Nam magni aliquid veniam impedit.
+        Doloremque nulla repellat rerum corrupti praesentium harum blanditiis optio nam tempora hic voluptatem, totam
+        laborum. Deleniti ipsum quo illum est laboriosam maxime, nemo, vitae explicabo necessitatibus optio fugiat iusto
+        facilis deserunt eligendi nisi accusantium excepturi saepe similique. Ipsum sed quia iusto laborum ipsam,
+        voluptatibus enim cum praesentium quod. Consequatur debitis, et ad ipsum expedita, adipisci quidem, blanditiis
+        vero
+        quos harum sequi animi libero ex commodi maxime veniam voluptatibus quis id est? Fugiat soluta exercitationem
+        officia? Dolorem nihil harum rerum ducimus temporibus, ipsa nisi quod asperiores vitae esse voluptate dolor at
+        distinctio, officia officiis voluptatem aspernatur sequi dolore dolores? Commodi voluptates quos corporis
+        repellat
+        minus ut porro error illum vero? Suscipit magnam nulla blanditiis hic, voluptatem dicta asperiores aperiam harum
+        praesentium autem. Accusantium officia quibusdam fugiat exercitationem harum sed voluptate rem atque odit ipsam
+        voluptatibus cum eius dolore, est vero perferendis libero minus distinctio expedita. Rerum necessitatibus
+        quaerat
+        porro illo adipisci accusamus? Autem ad eius saepe, quasi temporibus adipisci itaque placeat sapiente vero ex
+        maxime
+        repellat repellendus labore. Repellat doloremque corrupti odit velit reiciendis quas distinctio voluptate
+        incidunt
+        nisi earum molestiae quae harum consequuntur quo dicta ratione error reprehenderit, mollitia ipsa iusto
+        cupiditate
+
+    </div>
+
+    <footer class="footer bg-dark text-white">
+        <div class="container foot">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="active foot-color" href="#"><span class="fa fa-home"></span> Home</a></li>
+                        <li><a class="foot-color" href="#"><span class="fa fa-info"></span> About</a>
+                        </li>
+                        <li><a class="foot-color" href="#"><span class="fa fa-list-alt"></span> Menu</a></li>
+                        <li><a class="foot-color" href="#"><span class="fa fa-address-book"></span>
+                                Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address><span class="fa fa-map-marker fa-lg"></span>
+                        Xavier Institute of<br>
+                        Engineering, Mahim<br>
+                        Mumbai- 400016<br>
+                        <div class="foot-color">
+                            <i class="fa fa-phone fa-lg"></i> +852 1234 5678<br>
+                            <i class="fa fa-fax fa-lg"></i> +852 8765 4321<br>
+                            <i class="fa fa-envelope fa-lg"></i> <a class="foot-color"
+                                href="mailto:sportify@gmail.com">sportify@gmail.com</a>
+                        </div>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <h3>Connect Us</h3>
+                        <a class="btn btn-social-icon btn-google shadow foot-color" href="http://google.com/"><i
+                                class="fa fa-google fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook shadow foot-color"
+                            href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin shadow foot-color"
+                            href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter shadow foot-color" href="http://twitter.com/"><i
+                                class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn shadow foot-color" href="http://youtube.com/"><i
+                                class="fa fa-youtube-square fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn- shadow foot-color" href="mailto:"><i
+                                class="fa fa-envelope-square fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright Group-18 ~ 2021 </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery, Popper, Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

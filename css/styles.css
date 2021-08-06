@@ -1,0 +1,15 @@
+.foot{
+    padding: 20px ;
+}
+.active{
+    font-weight: 750;
+}
+.foot-color{
+    color: rgba(255, 255, 255, 0.61);
+    border-block-color: rgb(253, 253, 253);
+    text-decoration: none;
+}
+.foot-color:hover{
+    color: aliceblue;
+    text-decoration: none;
+}
