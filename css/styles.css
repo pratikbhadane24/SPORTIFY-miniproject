@@ -13,3 +13,9 @@
     color: aliceblue;
     text-decoration: none;
 }
+
+.dropdown-color:hover{
+    background-color: rgba(109, 113, 116, 0.315);
+    color: black;
+    
+}
