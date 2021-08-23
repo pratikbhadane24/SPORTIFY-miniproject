@@ -1,0 +1,19 @@
+{
+  "name": "sportify-miniproject",
+  "version": "1.0.0",
+  "description": "Mini Project Sem 5",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratikbhadane24/SPORTIFY-miniproject.git"
+  },
+  "author": "Group 18 (Pratik, Chris, Swaraj)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratikbhadane24/SPORTIFY-miniproject/issues"
+  },
+  "homepage": "https://github.com/pratikbhadane24/SPORTIFY-miniproject#readme"
+}
