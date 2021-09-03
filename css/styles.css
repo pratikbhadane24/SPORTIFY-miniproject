@@ -38,6 +38,18 @@
 
 
 
+/* Card Buttons */
+.twt-card:hover{
+    color: #1DA1F2 !important; 
+}
+.fb-card:hover{
+    color: #4267B2 !important; 
+}
+.insta-card:hover{
+    color: #E1306C !important;
+}
+
+
 
 /* Buttons */
 .wa{
