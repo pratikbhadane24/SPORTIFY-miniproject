@@ -24,3 +24,8 @@
 }
 
 .modal-close-btn {
+    color: white; 
+    background-color: rgb(34, 37, 41);
+    opacity: 1;
+    border: none;
+}
