@@ -8,7 +8,9 @@
     color: rgba(255, 255, 255);
     text-decoration: none;
 }
-
+.foot-color:hover{
+    color: rgb(150, 150, 150);
+}
 .dropdown-color:hover{
     background-color: rgba(109, 113, 116, 0.315);
     color: black;
