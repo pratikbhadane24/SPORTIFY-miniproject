@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportify About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar here -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="35" width="40"> Sportify</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"><span class="fa fa-home"></span> Home<span
+                                class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html"><span class="fa fa-info"></span> About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="fa fa-bars"></span>
+                            Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item dropdown-color" href="#">Football</a>
+                            <a class="dropdown-item dropdown-color" href="#">Cricket</a>
+                            <a class="dropdown-item dropdown-color" href="#">Basketball</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="fa fa-address-book"></span> Contact Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text ms-auto p-3">
+                    <a href="#" data-toggle="modal" data-target="#registerModal">
+                        <span class="fa fa-user-plus"></span> Register</a>
+                </span>
+                <span class="navbar-text p-3">
+                    <a href="#" data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- LoginModal content-->
+            <div class="modal-content">
+                <div class="bg-dark text-light modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close modal-close-btn h3" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="col form-row">
+
+                            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                placeholder="Enter email">
+                        </div><br>
+                        <div class="col form-row">
+                            <label class="sr-only" for="exampleInputPassword3">Password</label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                                placeholder="Password">
+                        </div><br>
+                        <div class="col-sm-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label"> Remember me
+                                </label>
+                            </div>
+                        </div><br>
+                        <div class="col form-row">
+                            <button type="submit" class="btn btn-dark btn-sm ">Log in</button>
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-dismiss="modal">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="registerModal" class="modal fade margin150" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- RegisterModal content-->
+            <div class="modal-content">
+                <div class="bg-dark text-light modal-header">
+                    <h4 class="modal-title">Registration</h4>
+                    <button type="button" class="close modal-close-btn h3" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label class="sr-only" for="newFName">First Name</label>
+                                <input type="fname" class="form-control form-control-sm mr-1" id="newFName"
+                                    placeholder="First Name">
+                            </div>
+                            <div class="col-6"> <label class="sr-only" for="newLName">Last Name</label>
+                                <input type="lname" class="form-control form-control-sm mr-1" id="newLName"
+                                    placeholder="Last Name">
+                            </div>
+                        </div><br>
+                        <div class="col form-row">
+                            <div class="col">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                    placeholder="Enter email">
+                            </div>
+                        </div><br>
+                        <div class="col form-row">
+                            <div class="col">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1"
+                                    id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                        </div><br>
+                        <div class="col form-row">
+                            <div class="col">
+                                <button type="submit" class="btn btn-dark btn-sm ">Sign Up</button>
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Showcase -->
+    <section class="p-5 mt-5 bg-warning text-dark">
+        <div class="container">
+            <div class="jumbotron ">
+                <h1 class="display-4 ">Hi! We're Sportify</h1>
+                <hr class="my-3">
+                <h5 class="font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quae ipsum earum quibusdam soluta. Natus, hic.</h5>
+                
+        </div>
+    </section>
+
+    <!-- Grid Cards -->
+    <section class="p-4 mb-3 text-center">
+        <div>
+            <h1 class="d-3 mb-5">Meet Our Developers</h1>
+        </div>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card bg-primary text-light">
+                        <div class="card-body">
+                            <div>
+                                <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt=""/>
+                            </div>
+                            <h4 class="card-title mb-3">Pratik Bhadane</h4>
+                            <h6 class=" d-2 card-subtitle mb-2 text-warning">IT Engineer</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quos, id nam iste eum, mollitia voluptatum quod quam, impedit nesciunt maxime facilis laudantium. Pariatur, quia.</p>
+                            <a href="#"><i class="h3 fa fa-twitter text-light mx-2"></i></a>
+                            <a href="#"><i class="h3 fa fa-facebook text-light mx-2"></i></a>
+                            <a href="#"><i class="h3 fa fa-linkedin text-light mx-2"></i></a>
+                            <a href="#"><i class="h3 fa fa-instagram text-light mx-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card bg-primary text-light">
+                        <div class="card-body">
+                            <div>
+                                <img src="https://randomuser.me/api/portraits/men/29.jpg" class="rounded-circle mb-3" alt=""/>
+                            </div>
+                            <h4 class="card-title mb-3">Chris Gonslaves</h4>
+                            <h6 class=" d-2 card-subtitle mb-2 text-warning">IT Engineer</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quos, id nam iste eum, mollitia voluptatum quod quam, impedit nesciunt maxime facilis laudantium. Pariatur, quia.</p>
+                            <a href="#"><i class="h3 fa fa-twitter text-light mx-2"></i></a>
+                            <a href="#"><i class="h3 fa fa-facebook text-light mx-2"></i></a>
+                            <a href="#"><i class="h3 fa fa-linkedin text-light mx-2"></i></a>
+                            <a href="#"><i class="h3 fa fa-instagram text-light mx-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-primary text-light">
+                        <div class="card-body">
+                            <div>
+                                <img src="https://randomuser.me/api/portraits/men/10.jpg" class="rounded-circle mb-3" alt=""/>
+                            </div>
+                            <h4 class="card-title mb-3">Swaraj Jinagouda</h4>
+                            <h6 class=" d-2 card-subtitle mb-2 text-warning">IT Engineer</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quos, id nam iste eum, mollitia voluptatum quod quam, impedit nesciunt maxime facilis laudantium. Pariatur, quia.</p>
+                            <a href="#"><i class="h3 fa fa-twitter text-light mx-2"></i></a>
+                            <a href="#"><i class="h3 fa fa-facebook text-light mx-2"></i></a>
+                            <a href="#"><i class="h3 fa fa-linkedin text-light mx-2"></i></a>
+                            <a href="#"><i class="h3 fa fa-instagram text-light mx-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white">
+        <div class="container foot">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="active foot-color" href="#"><span class="fa fa-home"></span> Home</a></li>
+                        <li><a class="foot-color" href="#"><span class="fa fa-info"></span> About</a>
+                        </li>
+                        <li><a class="foot-color" href="#"><span class="fa fa-list-alt"></span> Menu</a></li>
+                        <li><a class="foot-color" href="#"><span class="fa fa-address-book"></span>
+                                Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address><span class="fa fa-map-marker fa-lg"></span>
+                        Xavier Institute of<br>
+                        Engineering, Mahim<br>
+                        Mumbai- 400016<br>
+                        <div class="foot-color">
+                            <i class="fa fa-phone fa-lg"></i> +852 1234 5678<br>
+                            <i class="fa fa-fax fa-lg"></i> +852 8765 4321<br>
+                            <i class="fa fa-envelope fa-lg"></i> <a class="foot-color"
+                                href="mailto:sportify@gmail.com">sportify@gmail.com</a>
+                        </div>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <h3>Connect Us</h3>
+                        <a class="btn btn-social-icon btn-whatsapp shadow foot-color" href="http://wa.me/"><i
+                                class="fa fa-whatsapp fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook shadow foot-color"
+                            href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin shadow foot-color"
+                            href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter shadow foot-color" href="http://twitter.com/"><i
+                                class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn shadow foot-color" href="http://youtube.com/"><i
+                                class="fa fa-youtube-square fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn- shadow foot-color" href="mailto:"><i
+                                class="fa fa-envelope-square fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright Group-18 ~ 2021 </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery, Popper, Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
