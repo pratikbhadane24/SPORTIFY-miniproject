@@ -4,7 +4,8 @@
   "description": "Mini Project Sem 5",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/pratikbhadane24/SPORTIFY-miniproject/issues"
   },
-  "homepage": "https://github.com/pratikbhadane24/SPORTIFY-miniproject#readme"
+  "homepage": "https://github.com/pratikbhadane24/SPORTIFY-miniproject#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.12"
+  }
 }
