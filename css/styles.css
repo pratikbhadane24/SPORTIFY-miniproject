@@ -5,12 +5,7 @@
     text-decoration:overline;
 }
 .foot-color{
-    color: rgba(255, 255, 255, 0.61);
-    border-block-color: rgb(253, 253, 253);
-    text-decoration: none;
-}
-.foot-color:hover{
-    color: aliceblue;
+    color: rgba(255, 255, 255);
     text-decoration: none;
 }
 
@@ -29,3 +24,59 @@
     opacity: 1;
     border: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Buttons */
+.wa{
+    background-color: #25D366;
+    color: white;
+}
+.wa:hover{
+    color: #25D366;
+    background-color: white;
+}
+
+.twt{
+    background-color: #1DA1F2;
+    color: white;
+}
+.twt:hover{
+    color: #1DA1F2;
+    background-color: white;
+}
+.fb{
+    color: white;
+    background-color: #4267B2;
+}
+.fb:hover{
+    background-color: white;
+    color: #4267B2;
+}
+.yt{
+    background-color: #FF0000;
+    color: white;
+}
+.yt:hover{
+    color: #FF0000;
+    background-color: white;
+}
+.mail{
+    color: goldenrod;
+    background-color: white;
+}
+.mail{
+    color: white;
+    background-color: goldenrod;
+}
+
