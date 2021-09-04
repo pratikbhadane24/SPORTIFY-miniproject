@@ -1,9 +1,6 @@
 .foot{
     padding: 20px ;
 }
-.active{
-    text-decoration:overline;
-}
 .foot-color{
     color: rgba(255, 255, 255);
     text-decoration: none;
