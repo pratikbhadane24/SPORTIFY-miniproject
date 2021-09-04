@@ -47,7 +47,7 @@ app.get("/about-us",(req, res) => {
 });
 
 // To Start Server
-app.listen(5000, () => {
-    console.log("Current Directory : " + __dirname)
-    console.log("Server Started on Port 5000")
+my_port = process.env.PORT || 5000
+app.listen(my_port, () => {
+    console.log(`Server Started on Port ${my_port}`)
 });
