@@ -1,6 +1,7 @@
 const express = require('express');
 const mysql = require('mysql');
 const dotenv = require('dotenv');
+const path = require('path');
 
 const app = express();
 
@@ -26,10 +27,27 @@ db.connect( (error) => {
     }
 });
 
+// Importing path of Public File
+const publicDirectory = path.join(__dirname, './public');
+
+// Giving Express the Directory
+app.use(express.static(publicDirectory));
+
+// Setting View  Engine to use EJS
+app.set('view engine', 'ejs');
+
+// Getting Homepage
 app.get("/",(req, res) => {
-    res.send("Hello")
+    res.render('index')
 });
 
+// Getting About Us Page
+app.get("/about-us",(req, res) => {
+    res.render('about-us')
+});
+
+// To Start Server
 app.listen(5000, () => {
+    console.log("Current Directory : " + __dirname)
     console.log("Server Started on Port 5000")
 });
