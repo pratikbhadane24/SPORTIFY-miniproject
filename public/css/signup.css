@@ -27,9 +27,11 @@ body {
 
 .form-signin .form-control {
   position: relative;
+  margin-bottom: 10px;
   box-sizing: border-box;
   height: auto;
-  padding: 12px;
+  padding: 10px;
+  padding-bottom: 15px;
   font-size: 16px;
 }
 .form-control:focus {
@@ -41,4 +43,9 @@ body {
   margin-bottom: 1px;
   border-bottom-right-radius: 0;  
   border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-top: 1px;
+  border-top-right-radius: 0;  
+  border-top-left-radius: 0;
 }
