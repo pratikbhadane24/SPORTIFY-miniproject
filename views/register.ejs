@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="icon" href="/img/favicon.ico" type="image/png">
+    <title>Sportify Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/register.css">
+
+</head>
+
+<body class="form-v7">
+    <div class="page-content">
+        <div class="form-v7-content">
+            <div class="form-left">
+                <img src="img/register.gif" alt="form" width="360" height="560">
+                <p class="text-1">Sign Up</p>
+                <p class="text-2">Privacy policy & Term of service</p>
+            </div>
+            <form class="form-detail" action="#" method="post" id="myform">
+                <div class="form-row">
+                    <label for="username">FULL NAME</label>
+                    <input type="text" name="fullname" id="fullname" class="input-text" required>
+                </div>
+                <div class="form-row">
+                    <label for="your_email">E-MAIL</label>
+                    <input type="text" name="your_email" id="your_email" class="input-text" required
+                        pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                </div>
+                <div class="form-row">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" class="input-text" required>
+                </div>
+                <div class="form-row">
+                    <label for="comfirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" name="comfirm_password" id="comfirm_password" class="input-text" required>
+                </div>
+                <div class="form-row-last">
+                    <input type="submit" name="register" class="register" value="Register">
+                    <p>Or<a href="/login">Sign in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script>
+        // just for the demos, avoids form submit
+        jQuery.validator.setDefaults({
+            debug: true,
+            success: function (label) {
+                label.attr('id', 'valid');
+            },
+        });
+        $("#myform").validate({
+            rules: {
+                fullname: {
+                    required: true
+                },
+                your_email: {
+                    required: true,
+                    email: true
+                },
+                password: "required",
+                comfirm_password: {
+                    equalTo: "#password"
+                }
+            },
+            messages: {
+                fullname: {
+                    required: "Please enter your Name"
+                },
+                your_email: {
+                    required: "Please provide an Email"
+                },
+                password: {
+                    required: "Please provide a Password"
+                },
+                comfirm_password: {
+                    required: "Please provide a Password",
+                    equalTo: "Wrong Password"
+                }
+            }
+        });
+    </script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
