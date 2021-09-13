@@ -51,6 +51,11 @@ app.get("/login",(req, res) => {
     res.render('login')
 });
 
+// Getting Registration Page
+app.get("/register",(req, res) => {
+    res.render('register')
+});
+
 // To Start Server
 my_port = process.env.PORT || 5000
 app.listen(my_port, () => {
